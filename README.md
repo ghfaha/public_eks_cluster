@@ -35,7 +35,7 @@ You need to replace vx.x.x with a required version and include that call in your
 ```
 module "public_eks_cluster" {
   # note update the source link with the required version
-  source         = "git::https://github.com/ghfaha/public_eks_cluster"
+  source         = "git::https://github.com/ghfaha/public_eks_cluster?ref=vx.x.x"
   vpc_name       = "k8s-cluster-VPC"
   cluster_name   = "k8s-cluster"
   desired_size   = 3
