@@ -88,7 +88,7 @@ module "public_eks_cluster" {
 |------|-------------|------|---------|:--------:|
 | <a name="input_cluster_name"></a> [cluster\_name](#input\_cluster\_name) | Name of the EKS Cluster. Must be between 1-100 characters in length. Must begin with an alphanumeric character, and must only contain alphanumeric characters, dashes and underscores (^[0-9A-Za-z][A-Za-z0-9-\_]+$). | `string` | n/a | yes |
 | <a name="input_desired_size"></a> [desired\_size](#input\_desired\_size) | Desired size of the worker node, the default value is 2 | `number` | `2` | no |
-| <a name="input_instance_types"></a> [instance\_types](#input\_instance\_types) | List of instance types associated with the EKS Node Group. the default vaule is ["t2.micro"]. Terraform will only perform drift detection if a configuration value is provided. | `list(string)` | <pre>[<br>  "t3.medium"<br>]</pre> | no |
+| <a name="input_instance_types"></a> [instance\_types](#input\_instance\_types) | List of instance types associated with the EKS Node Group. the default vaule is ["t2.micro"]. Terraform will only perform drift detection if a configuration value is provided. | `list(string)` | <pre>[<br>  "t2.micro"<br>]</pre> | no |
 | <a name="input_max_size"></a> [max\_size](#input\_max\_size) | Maximum size of the worker node, the default value is 2 | `number` | `2` | no |
 | <a name="input_min_size"></a> [min\_size](#input\_min\_size) | Minimum size of the worker node, the default value is 1 | `number` | `1` | no |
 | <a name="input_vpc_cidr"></a> [vpc\_cidr](#input\_vpc\_cidr) | The Cidr of VPC where cluster will be created on, the default value is "10.0.0.0/16" | `string` | `"10.0.0.0/16"` | no |
